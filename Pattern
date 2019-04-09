@@ -1,3 +1,5 @@
+//Program to print series 1,3,7...  for n number of terms and to print its sum
+
 #include<stdio.h>
 void main()
 {
@@ -5,13 +7,13 @@ void main()
 	a=1;
 	sum=0;
 	printf("Enter the limit: ");
-	scanf("%d",&n);
+	scanf("%d",&n);                            //number of terms till series have to be displayed entered
 	for(i=1;i<n;++i)
 	{
 		a=a*2;
 		num=a-1;
-		printf("%d  ",num);
+		printf("%d  ",num);                //series printed
 		sum=sum+num;
 	}
-	printf("\nSum : %d",sum);
+	printf("\nSum : %d",sum);                  //sum of series printed
 }
